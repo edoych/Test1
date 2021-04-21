@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="window">
+        <div class="plans_list">
+            <div class="radio">
+                    <div class="radio_inside">
+                        <input class="radio__input" name="license" type="radio" id="radio_1" value="13" onclick="myFunction()">
+                        <label class="radio__label" for="radio_1"><span>LICENSE PLAN #1</span></label>
+                    </div>
+                    <div class="price">
+                        <span>$13per license</span>
+                    </div>        
+            </div>
+        
+            <div class="radio">
+                <div class="radio_inside">
+                    <input class="radio__input" name="license" type="radio" id="radio_2"  value="22" onclick="myFunction()">
+                    <label class="radio__label" for="radio_2"><span>LICENSE PLAN #2</span></label>
+                </div>
+                <div class="price">
+                    <span>$22per license</span>
+                </div>
+            </div>
+
+            <div class="radio">
+                <div class="radio_inside">
+                    <input class="radio__input" name="license" type="radio" id="radio_3"  value="34" checked onclick="myFunction()">
+                    <label class="radio__label" for="radio_3"><span>LICENSE PLAN #3</span></label>
+                </div>
+                <div class="price">
+                    <span>$34per license</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="number_of_licenses_container">
+            <div class="select">
+                <label class="bg" for="select">Number of licences:</label>
+                <select id="list" onchange="multiplay()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10" selected>10</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="purchase">
+            <div class="total_price">
+                <span>TOTAL:</span>
+            </div>
+            <div class="number_of_price">
+                <div class="n_price"><span>$340</span></div>
+                <div class="dollar"><span>US</span></div>
+            </div>
+        </div>
+        <div class="buy_btn_container">
+            <div class="buy_btn"><a href="#">Buy now</a></div>
+        </div>
+        <div class="selected_plan_container">
+            <div class="selected_span"><span>Selected plan: </span></div>
+            <span class="lattice">#</span>
+            <span id="selected_number" onclick="myFunction()">1</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
